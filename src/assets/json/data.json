@@ -1,0 +1,228 @@
+{
+    "ratings":[
+        {
+            "username": "a********6",
+            "rateTime": "2023-11-06 22:46",
+            "deliveryTime": 30,
+            "score": 5,
+            "rateType": 0,
+            "text": "第一次吃这家面，很好吃，以后订外卖还会选择这一家",
+            "recommend": [
+              "重庆小面",
+              "卤蛋",
+              "油麦菜",
+              "橙汁"
+            ]
+          },
+          {
+            "username": "b********t",
+            "rateTime": "2023-11-06 19:47",
+            "deliveryTime": "",
+            "score": 4,
+            "rateType": 0,
+            "text": "服务态度非常不错",
+            "recommend": [
+              "豌杂面"
+            ]
+          },
+          {
+            "username": "c********1",
+            "rateTime": "2023-11-06 17:12",
+            "score": 3,
+            "rateType": 1,
+            "text": "",
+            "recommend": []
+          },
+          {
+            "username": "d********u",
+            "rateTime": "2023-11-06 17:11",
+            "deliveryTime": 20,
+            "score": 5,
+            "rateType": 0,
+            "text": "卖家态度好，给的分量足，以后订外卖还会选择这一家，可能由于下雨天的原因，外卖送的比较慢",
+            "recommend": []
+          },
+          {
+            "username": "e********0",
+            "rateTime": "2023-11-06 14:14",
+            "deliveryTime": 10,
+            "score": 4,
+            "rateType": 0,
+            "text": "",
+            "recommend": []
+          },
+          {
+            "username": "f********n",
+            "rateTime": "2023-11-06 11:39",
+            "deliveryTime": 70,
+            "score": 1,
+            "rateType": 1,
+            "text": "配送速度很慢，等了好久，面都不好吃了",
+            "recommend": []
+          },
+          {
+            "username": "g********3",
+            "rateTime": "2023-11-06 08:52",
+            "deliveryTime": 30,
+            "score": 5,
+            "rateType": 0,
+            "text": "很喜欢的一家店，豌杂面是我最喜欢的面，每次都会点",
+            "recommend": []
+          },
+          {
+            "username": "h********x",
+            "rateTime": "2023-10-25 16:07",
+            "deliveryTime": "",
+            "score": 4,
+            "rateType": 0,
+            "text": "量很足，点个赞",
+            "recommend": []
+          },
+          {
+            "username": "i********v",
+            "rateTime": "2023-10-25 13:32",
+            "deliveryTime": "",
+            "score": 3,
+            "rateType": 1,
+            "text": "",
+            "recommend": []
+          },
+          {
+            "username": "j********9",
+            "rateTime": "2023-10-25 10:46",
+            "deliveryTime": "",
+            "score": 4,
+            "rateType": 0,
+            "text": "吃了好多次了，最喜欢他家的牛肉面",
+            "recommend": [
+              "牛肉面"
+            ]
+          },
+          {
+            "username": "k********j",
+            "rateTime": "2023-10-25 07:47",
+            "deliveryTime": "",
+            "score": 4,
+            "rateType": 0,
+            "text": "面挺好吃的",
+            "recommend": []
+          },
+          {
+            "username": "l********4",
+            "rateTime": "2023-10-25 05:12",
+            "deliveryTime": "",
+            "score": 3,
+            "rateType": 1,
+            "text": "",
+            "recommend": []
+          },
+          {
+            "username": "m********1",
+            "rateTime": "2023-10-25 02:26",
+            "deliveryTime": 15,
+            "score": 5,
+            "rateType": 0,
+            "text": "外卖配送的挺快的，不到三十分钟就送到了",
+            "recommend": []
+          },
+          {
+            "username": "n********d",
+            "rateTime": "2023-10-24 23:27",
+            "deliveryTime": "",
+            "score": 4,
+            "rateType": 0,
+            "text": "",
+            "recommend": []
+          },
+          {
+            "username": "o********7",
+            "rateTime": "2023-10-13 07:06",
+            "deliveryTime": "",
+            "score": 4,
+            "rateType": 0,
+            "text": "天气不太好，给快递小哥点个赞",
+            "recommend": []
+          },
+          {
+            "username": "p********z",
+            "rateTime": "2023-10-13 04:19",
+            "deliveryTime": "",
+            "score": 4,
+            "rateType": 0,
+            "text": "好",
+            "recommend": []
+          },
+          {
+            "username": "q********k",
+            "rateTime": "2023-10-13 01:21",
+            "deliveryTime": "",
+            "score": 5,
+            "rateType": 0,
+            "text": "是我喜欢的口味",
+            "recommend": []
+          },
+          {
+            "username": "r********2",
+            "rateTime": "2023-10-12 22:46",
+            "deliveryTime": "",
+            "score": 3,
+            "rateType": 1,
+            "text": "说是可以开发票，可是配送的时候并没有开发票",
+            "recommend": []
+          },
+          {
+            "username": "s********8",
+            "rateTime": "2023-10-01 06:12",
+            "deliveryTime": 30,
+            "score": 5,
+            "rateType": 0,
+            "text": "好吃",
+            "recommend": []
+          },
+          {
+            "username": "t********s",
+            "rateTime": "2023-10-01 03:14",
+            "deliveryTime": 40,
+            "score": 5,
+            "rateType": 0,
+            "text": "挺好的",
+            "recommend": []
+          },
+          {
+            "username": "u********3",
+            "rateTime": "2023-10-01 00:39",
+            "deliveryTime": "",
+            "score": 2,
+            "rateType": 1,
+            "text": "",
+            "recommend": []
+          },
+          {
+            "username": "v********6",
+            "rateTime": "2023-09-30 21:52",
+            "deliveryTime": "",
+            "score": 4,
+            "rateType": 0,
+            "text": "面的味道不错",
+            "recommend": []
+          },
+          {
+            "username": "w********j",
+            "rateTime": "2023-09-19 05:07",
+            "deliveryTime": "",
+            "score": 5,
+            "rateType": 0,
+            "text": "",
+            "recommend": []
+          },
+          {
+            "username": "x********5",
+            "rateTime": "2023-09-19 02:32",
+            "deliveryTime": "",
+            "score": 4,
+            "rateType": 0,
+            "text": "",
+            "recommend": []
+          }
+    ]
+}
