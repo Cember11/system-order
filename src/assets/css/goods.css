@@ -1,0 +1,201 @@
+.div-cart{
+    width: 1200px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.div{
+    display: flex;
+    /* position: absolute; */
+    width: 100%;
+    /* top: 174px; */
+    bottom: 46px;
+    /* overflow: hidden; */
+    /* height: 920px; */
+    height: 610px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+.menu{
+    flex: 0 0 80px;
+    width: 100px;
+    background: #f3f5f7;
+}
+.menu-item{
+    display: table;
+    width: 80px;
+    height: 54px;
+    line-height: 14px;
+    padding: 0 12px;
+    position: relative;
+    z-index: 10;
+    /* margin-top: -1px; */
+    font-weight: 700;
+}
+.text{
+    display: table-cell;
+    width: 80px;
+    vertical-align: middle;
+    position: relative;
+    font-size: 16px;
+}
+.text-color{
+    background-color: #ffffff;
+}
+.text::after{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid rgba(7,17,27,0.1);
+    width: 100%;
+    content: '';
+}
+.foods{
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* .foods::-webkit-scrollbar{
+    width: 5px;
+    height: 10px;
+    background-color: #f5f5f5;
+} */
+.title{
+    padding-left: 14px;
+    height: 30px;
+    line-height: 30px;
+    border-left: 2px solid #d9dde1;
+    font-size: 16px;
+    color: #93999f;
+    background: #f3f5f7;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.ul-food{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.food{
+    display: flex;
+    /* margin: 18px; */
+    padding-bottom: 18px;
+    position: relative;
+    margin-top: 15px;
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-bottom: 0px;
+}
+.food::after{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid rgba(7,17,27,0.1);
+    width: 100%;
+    content: '';
+}
+.food-img{
+    width: 130px;
+    height: 110px;
+}
+.img{
+    flex: 0 0 57px;
+    margin-right: 10px;
+}
+.name{
+    margin: 2px 0 8px 0;
+    font-size: 18px;
+    line-height: 25px;
+    height: 25px;
+    color: #07111b;
+}
+.rate{
+    /* font-size: 10px; */
+    /* line-height: 10px; */
+    color: #93999f;
+    height: 25px;
+}
+.span{
+    margin-right: 14px;
+    line-height: 18px;
+    height: 18px;
+    font-size: 16px;
+}
+.price{
+    line-height: 30px;
+}
+.money{
+    font-size: 18px;
+    color: #f01414;
+}
+.food-div{
+    margin-left: 15px;
+}
+ul{
+    padding: 0;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-property: transform;
+    transition-duration: 0ms;
+    transform: translateX(0px) translateY(-16px) translateZ(1px);
+}
+.cartControl-wrapper{
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+}
+
+
+
+.cart-decrease{
+    display: inline-block;
+    padding: 4px 6px 6px 6px;
+   
+}
+.inner{
+    display: inline-block;
+    line-height: 30px;
+    font-size: 30px;
+    vertical-align: top;
+    color: lightsteelblue;
+}
+.inner::before{
+    content: "\E629";
+}
+.cart-count{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 30px;
+    width: 16px;
+    vertical-align: top;
+    padding-top: 6px;
+    text-align: center;
+    color: #93999f;
+}
+.cart-add{
+    display: inline-block;
+    padding: 6px;
+    line-height: 30px;
+    font-size: 30px;
+    vertical-align: top;
+    color: lightsteelblue;
+}
+.cart-add::before{
+    content: "\E622";
+}
+@font-face {font-family: "iconfont";
+    src: url('../fonts/iconfont.eot?t=1481787488332'); /* IE9*/
+    src: url('../fonts/iconfont.eot?t=1481787488332#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../fonts/iconfont.woff?t=1481787488332') format('woff'), /* chrome, firefox */
+      url('../fonts/iconfont.ttf?t=1481787488332') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+      url('../fonts/iconfont.svg?t=1481787488332#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  .iconfont{
+    
+    font-family: "iconfont" !important;
+    /* font-size: 16px; */
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}

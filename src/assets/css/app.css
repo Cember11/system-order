@@ -1,0 +1,40 @@
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  .tab{
+    /* display: -ms-flexbox; */
+      display: flex;
+      height: 45px;
+      line-height: 45px;
+      /* border: 1px solid rgba(7,17,27,0.1); */
+      position: relative;
+      margin: 0;
+      padding: 0;
+      width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .tab-item{
+    flex: 1;
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    
+  }
+  .tab::after{
+    display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-top: 1px solid rgba(7,17,27,0.1);
+      width: 100%;
+      content: '';
+  }
+  .tab-item a.router-link-active{
+    color: cadetblue;
+  }
+  
