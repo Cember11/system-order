@@ -8,23 +8,24 @@
       </router-link>
     </div>
     <div class="tab-item">
-      <router-link to="/shopRate">
+      <router-link to="/ShopRate">
         <span>商品评价</span>
       </router-link>
     </div>
     <div class="tab-item">
-      <router-link to="/shoper">
+      <router-link to="/Shoper">
         <span>商家详情</span>
       </router-link>
     </div>
   </div>
   <div>
     <!--定义路由视图，匹配路由对应的组件将在这里渲染-->
-    <router-view></router-view>
+    <router-view ></router-view>
   </div>
 </template>
 <script setup>
   import AppHeader from './components/AppHeader.vue'
+  import { RouterView } from 'vue-router';
 </script>
 <style src="./assets/CSS/app.css" scoped></style>
 

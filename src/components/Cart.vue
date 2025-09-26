@@ -8,7 +8,7 @@
             </div>
             <div class="list-content">
                 <ul class="ul-list">
-                    <li class="shopCart-food" v-fot food in cartFoods>
+                    <li class="shopCart-food" v-for="food in cartFoods" :key="food.id" >
                         <span class="name">{{ food.name }}</span>
                         <!-- 计算每个商品的总价 -->
                          <div class="price2">

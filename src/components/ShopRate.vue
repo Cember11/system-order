@@ -1,5 +1,6 @@
 <template>
     <div class="ratings">
+      商家评价
   <div>
     <!-- 商家的综合评价，商品评价模块的顶部 -->
     <div class="ratings-top">

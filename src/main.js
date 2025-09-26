@@ -18,12 +18,12 @@ import Shoper from './components/Shoper.vue'
             component:Goods
         },
         {
-            name:'shoprate',
+            name:'ShopRate',
             path:'/ShopRate',
             component:ShopRate
         },
         {
-            name:'shoper',
+            name:'Shoper',
             path:'/Shoper',
             component:Shoper
         }
