@@ -56,7 +56,7 @@
         </span>
       </div>
       <div class="switch">
-        <i class="iconfont icon-gou" :class="{'on':active}" @click="colorChange"></i>
+        <i class="icon-font icon-gou" :class="{'on':active}" @click="colorChange"></i>
         <span class="text-rate">只看有内容的评价</span>
       </div>
     </div>
@@ -64,6 +64,7 @@
     <div class="rating-wrapper border-1px">
       <ul class="rate-ul">
         <!-- 使用v-for指令循环渲染商品评价信息 -->
+         <transition-group name="list">
        <li v-for="rating in ratings" :key="rating.rateTime" class="rating-item" v-show="ifShow(rating.rateType,rating.text)">
           <div class="avater">
             <img src="../assets/user.png" class="rate-img" />
@@ -80,12 +81,13 @@
             </div>
             <p class="item-text">{{rating.text}}</p>
             <div class="recommend" v-show="rating.recommend && rating.recommend.length">
-              <i class="item-iconfont icon-damuzhi"></i>
+              <i class="item-icon-font icon-damuzhi"></i>
               <span class="item" v-for="(item, index) in rating.recommend" :key="index">{{ item }}</span>
             </div>
             <div class="time">{{ rating.rateTime}}</div>
           </div>
         </li>
+      </transition-group>
       </ul>
     </div>
   </div>

@@ -11,18 +11,24 @@
     <input type="password" id="password" v-model="password"/>
    
 </div>
- <button type="submit" class="button1" v-bind:disabled="disabled">登录</button>
-<button type="submit" class="button2">取消</button>
+ <button type="button" class="button1" v-bind:disabled="disabled">登录</button>
+<button type="button" class="button2" @click="upLogin">取消</button>
 
 </template>
 
-<script>
+<script setup>
 import{ref,computed} from 'vue'
 const username=ref('')
 const password=ref('')
 const disabled=computed(()=>{
     return username.value.length==0||password.value.length==0
 })
+const emit=defineEmits(['upLogin'])
+const upLogin=()=>{
+    username.value=''
+    password.value=''
+    emit('upLogin')
+}
 </script>
 
 <style src="../assets/css/login.css" scoped >

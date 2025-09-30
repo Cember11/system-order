@@ -192,10 +192,22 @@ ul{
       url('../fonts/iconfont.ttf?t=1481787488332') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
       url('../fonts/iconfont.svg?t=1481787488332#iconfont') format('svg'); /* iOS 4.1- */
   }
-  .iconfont{
+  .icon-font{
     
     font-family: "iconfont" !important;
     /* font-size: 16px; */
     font-style: normal;
     -webkit-font-smoothing: antialiased;
+}
+.fade-enter-from{
+    opacity: 0;
+    transform:translateX(30px);
+
+}
+.fade-enter-active{
+    transition: all 2 ease;
+}
+.fade-leave-to{
+    opacity: 1;
+    transform: translateX(30px);
 }

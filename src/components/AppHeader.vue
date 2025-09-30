@@ -30,15 +30,24 @@
         </div>
         <!-- 显示商家公告和登录按钮 -->
         <div class="div-3">
+            <div v-show="isLogin" class="login-div">
+                <!-- 登录组件并监听自定义事件 upLogin-->
+                <transition name="bounce">
+                     <Login class="login" @upLogin="upLogin">
+                 </Login>
+                </transition> 
+               
+            </div>
             <img src="../assets/bulletin.png" class="img-h4" />
             <h4 class="div-3-h">
                 <span class="span-4">{{shop.bulletin}}</span>
             </h4>
-            <button class="btn">登 录</button>
+            <button class="btn" @click="showLogin">登录</button>
         </div>
     </div>
 </template>
 <script setup>
+import Login from './Login.vue'    //导入登录组件
 import { ref } from 'vue'		//导入ref()函数
 //使用ref()函数定义响应式对象shop，在其中定义商家的基本信息
 const shop = ref({
@@ -48,5 +57,16 @@ const shop = ref({
     //商家公告
     bulletin: "本店精选优质食材，无污染，无添加，放心进行食用"
 })
+const isLogin=ref(false)  //定义响应式变量isLogin，表示登录组件的显示与隐藏，初始值为false
+//定义showLogin函数，点击登录按钮时调用该函数
+const showLogin=()=>{
+    console.log('showLogin')
+    isLogin.value=true
+}
+//定义upLogin函数，登录组件取消登录时调用该函数
+const upLogin=()=>{
+    console.log('upLogin')
+    isLogin.value=false
+}
 </script>
 <style src="../assets/CSS/header.css" scoped></style>

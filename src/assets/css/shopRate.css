@@ -185,7 +185,7 @@
     border-bottom: 1px solid rgba(1,17,27,0.1);;
     font-size: 0;
 }
-.iconfont{
+.icon-font{
     display: inline-block;
     vertical-align: top;
     font-size: 28px;
@@ -290,7 +290,7 @@
     line-height: 16px;
     font-size: 0;
 }
-.item-iconfont{
+.item-icon-font{
     display: inline-block;
     margin: 0 8px 4px 0;
     font-size: 14px;
@@ -343,7 +343,7 @@ img{
     display: inline-block;
     background-repeat: no-repeat;
 }
-.star-item-hakf-24{
+.star-item-half-24{
     background-image: url(../star24_half@2x.png);
     width: 12px;
     height: 12px;
@@ -367,4 +367,11 @@ img{
 .star-wrapper-item{
     margin-bottom: 6px;
     font-size: 0;
+}
+.list-enter-active,.list-leave-active{
+    transition: all 2s ease;
+}
+.list-enter-from, .list-leave-to{
+    opacity: 0;
+    transform: translateY(60px);
 }

@@ -1,6 +1,7 @@
 <template>
     <div class="shop-cart">
-        <div class="shopCart-list" v-show="shopShow">
+        <transition name="fadel" >
+              <div class="shopCart-list" v-show="shopShow">
             <div class="list-header">
                 <h1 class="title-cart">购物车</h1>
                <!-- 清空购物车中的商品 -->
@@ -19,6 +20,8 @@
             </div>
             
         </div>
+        </transition>
+      
         <div class="content">
         <div class="content-left">
             <div class="logo-wrapper">
@@ -38,7 +41,10 @@
         </div>
     </div>
     <!-- 定义遮罩，显示购物车中的商品时，覆盖其他内容 -->
-     <div class="list-mask" v-show="shopShow"></div>
+     <transition name="fadel">
+        <div class="list-mask" v-show="shopShow"></div>
+     </transition>
+  
 </template>
 <script setup>
 import { computed, ref } from 'vue'
@@ -67,7 +73,7 @@ import { computed, ref } from 'vue'
     let money=0
     if(props.cartFoods.length>0){
         for(let i=0;i<props.cartFoods.length;i++){
-            mon=props.cartFoods[i].price*props.cartFoods[i].count
+           let mon=props.cartFoods[i].price*props.cartFoods[i].count
             money+=mon
         }
     }
