@@ -5,6 +5,8 @@ import ShopRate from './components/ShopRate.vue'
 import Shoper from './components/Shoper.vue'
  import './style.css'
  import App from './App.vue'
+ import store from './store.js'
+ import axios from 'axios'
  const router = createRouter({
     history:createWebHashHistory(),
     routes:[
@@ -31,4 +33,7 @@ import Shoper from './components/Shoper.vue'
  })
 const app=createApp(App)
 app.use(router)
+axios.defaults.baseURL='http://localhost:3001'
+axios.defaults.timeout=3000
+app.use(store)
 app.mount('#app')

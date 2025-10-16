@@ -11,7 +11,7 @@
     <input type="password" id="password" v-model="password"/>
    
 </div>
- <button type="button" class="button1" v-bind:disabled="disabled">登录</button>
+ <button type="button" class="button1" v-bind:disabled="disabled" @click="login">登录</button>
 <button type="button" class="button2" @click="upLogin">取消</button>
 
 </template>
@@ -23,6 +23,10 @@ const password=ref('')
 const disabled=computed(()=>{
     return username.value.length==0||password.value.length==0
 })
+const login=()=>{
+    emit('login',{username:username.value,password:password.value})
+    alert('登录成功')
+}
 const emit=defineEmits(['upLogin'])
 const upLogin=()=>{
     username.value=''

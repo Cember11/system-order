@@ -62,9 +62,12 @@
 import Cart from './Cart.vue'					//导入组件Cart
 import { onMounted, ref, computed } from 'vue'
 import goods from '../assets/json/foods.json'		//导入数据
+import { useStore } from 'vuex'
+const store = useStore()
 const textType = ref(1)						//商品类型，默认为1
 const good = ref(goods.goods)					//获取商品数据
 const tops = ref([])
+
 //获取图片
 const geturl = (image) => {
     return new URL(image, import.meta.url).href
@@ -73,7 +76,8 @@ const geturl = (image) => {
 const foodPrice = (price) => { return price.toFixed(2) }
 //向购物车中添加商品或删减购物车中的商品
 const cart = (food, flag) => {
-    for (let i = 0; i < 4; i++) {
+    if(store.getters.flag){
+         for (let i = 0; i < 4; i++) {
         for (let y = 0; y < good.value[i].foods.length; y++) {
             if (good.value[i].foods[y].name == food.name) {
                 if (good.value[i].foods[y].count > 0) {
@@ -88,7 +92,10 @@ const cart = (food, flag) => {
             }
         }
     }
-}
+    }else{
+        alert('请先登录')
+   
+}}
 //计算加入购物车的商品
 const cartFoods = computed(() => {
     let list = []

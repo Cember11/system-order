@@ -42,13 +42,17 @@
             <h4 class="div-3-h">
                 <span class="span-4">{{shop.bulletin}}</span>
             </h4>
-            <button class="btn" @click="showLogin">登录</button>
+            <button class="btn" v-show="!$store.getters.flag" @click="showLogin">登录</button>
+            <button class="btn" v-show="$store.getters.flag" @click="outLogin">退出登录</button>
         </div>
     </div>
 </template>
 <script setup>
+import { useStore } from 'vuex'
+import axios from 'axios'
 import Login from './Login.vue'    //导入登录组件
 import { ref } from 'vue'		//导入ref()函数
+const store=useStore()
 //使用ref()函数定义响应式对象shop，在其中定义商家的基本信息
 const shop = ref({
     shopName: "最好吃的面馆",		//商家名称
@@ -62,6 +66,23 @@ const isLogin=ref(false)  //定义响应式变量isLogin，表示登录组件的
 const showLogin=()=>{
     console.log('showLogin')
     isLogin.value=true
+}
+const login=(value)=>{
+//使用Axios发送post请求，向服务器提交登录信息
+    axios.post('/login',value).then(()=>{
+        if(resizeBy.data.flag===1){
+            isLogin.value=false
+            store.commit('login',{
+                username:value.username,
+                password:value.password,
+            })  //修改Vuex中的flag值为false
+        alert('res.data.msg')
+        }
+    })
+}
+//退出登录
+const outLogin=()=>{
+    store.commit('outLogin')
 }
 //定义upLogin函数，登录组件取消登录时调用该函数
 const upLogin=()=>{
